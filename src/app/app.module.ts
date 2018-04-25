@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CalendarModule } from 'angular-calendar';
+import {NgbModule, NgbTabsetModule, NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +16,13 @@ import { CalendarModule } from 'angular-calendar';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CalendarModule.forRoot()
+    CalendarModule.forRoot(),
+    NgbTabsetModule.forRoot(),
+    NgbCollapseModule.forRoot(),
+    NgbModule.forRoot(),
+    CalendarModule,
+    FormsModule,
+
 
   ],
   providers: [],
